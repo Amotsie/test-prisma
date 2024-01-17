@@ -1,6 +1,7 @@
 {
   "name": "first-try",
   "version": "0.1.0",
+  "author": "Andreas Motsie",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,8 +10,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^5.8.1",
     "next": "14.0.4",
     "react": "^18",
+    "react-datepicker": "^4.25.0",
     "react-dom": "^18"
   },
   "devDependencies": {
@@ -19,6 +22,6 @@
     "eslint-config-next": "14.0.4",
     "postcss": "^8",
     "prisma": "^5.8.1",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^3.4.1"
   }
 }
