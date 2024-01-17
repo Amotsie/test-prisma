@@ -2,7 +2,6 @@ import prisma from '@/lib/prisma';
 import React from 'react'
 import WineRow from '../components/WineRow';
 import Link from 'next/link';
-import { revalidatePath } from 'next/cache'
 
 async function getWineList() {
     const list = await prisma.wine.findMany();
@@ -10,7 +9,6 @@ async function getWineList() {
 }
 
 export default async function WineList() {
-    revalidatePath('/list', 'page')
     const wineList = await getWineList();
     return (
         <main>
