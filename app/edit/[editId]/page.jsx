@@ -18,7 +18,7 @@ const EtitWinePage = ({ params }) => {
                 setFetchError(error.message)
             }
         };
-    }, []);
+    }, [editData, fetchError]);
     return (
         <div>
             {fetchError && <p>{fetchError}</p>}

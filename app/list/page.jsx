@@ -41,7 +41,7 @@ export default async function WineList() {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {wineList && wineList.map((w) =>
+                                    {wineList.map((w) =>
                                         <WineRow key={w.id} data={w} className />
                                     )}
                                 </tbody>
